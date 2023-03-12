@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(36, 36, 190);
+}
+div3 {
+    background-color: azure;
+    border-radius: 5px;
+    padding: 2%;
+
+}
+
+.u-l{
+    float: right;
+    padding :10px 2px ;
+    font-size:small;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 0, 255);
+
+}
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding :20px 10px ;
+    font-size:larger;
+}
+img {
+    width: 100%;
+
+
+}
+
+.outer-small-cont {
+    background-color: chartreuse;
+    float: right;
+
+}
+.inner-small-cont {
+    background-color: red;
+    width: 100%;
+    text-align: center;
+    color: white;
+
+
+
+}
+.l {
+    float: left;
+    background-color: chartreuse;
+    height: 100px;
+}
+.all-small-cont {
+    height: 400px;
+
+}
+.para1 {
+    font-size:large;
+
+}
+hr {
+    width: 70%;
+}

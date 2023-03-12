@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAE1SURBVHgB7ZdBDoIwEEWn6IJluQFLj+MNjCdQT6BbV8YTyA30RnID2LrCmRiVNMAMdLQs+IlJJe28z0wZigGhkiSpoIeKojCSeREE1txauzHGHHBsmyZI76RNHZnLq6o6RwjftsF/rBTZeypBCuFkw+8B94Jvzbl47p4YXwbapJ2Zt4JnYDKgbgA76wp3eoG/O46X3HxVAwTH7pbBq7NSp7twa9QM1OB1ldw6FQMtcMCXzY5byxqgOnbVtAO+LsvyxsVnDWDwE3xreiWgEJ6BQJJOaB1DGYI/Y/CAk9gMNNWRwBpwkQEKSIG5eUPgIgMSE0PhYgNdJnzgvQw4JnL66wsnGfeEIn3v45NgEc52OldqJ6Ih8CZN5wHT95tPW6MogcpmGqh8FsfxA/v6Av7/fUh95PgEIROb9L5bVT0AAAAASUVORK5CYII=">
+    <link rel="icon" href="./favicon.svg">
+    
+    <style>
+   
+        :root {
+      color-scheme: light dark;
+      --color-background: #fff;
+      --color-day-background: rgba(0,0,0, .075);
+      --color-day-border: var(--color-background);
+      --color-day-text: #000;
+      --color-focus: rgba(34, 144, 255, .5);
+      --color-today-background: rgba(253, 226, 144, 1);
+      --color-today-border: rgba(255,255,255, .5);
+      --color-today-text: #000;
+    }
+   
+          
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      display: flex;
+      height: 100%;
+      line-height: 1;
+      font-size: .999rem;
+      background: var(--color-background);
+    }
+    .plan {
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 66% auto;
+      grid-gap: .5rem;
+      flex-basis: 100%;
+    }
+    .heading {
+      padding-bottom: .5rem;
+      border-bottom: 1px solid var(--color-day-border);
+      font-weight: 400;
+      padding: .5rem;
+      display: flex;
+      justify-content: space-between;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      letter-spacing: .05em;
+    }
+    .notes {
+      background: var(--color-day-background);
+      display: flex;
+      flex-direction: column;
+      color: var(--color-day-text);
+    }
+   
+   
+    .month {
+      grid-column: span 3;
+    }
+    textarea {
+      flex-grow: 1;
+      border: 0;
+      resize: none;
+      background: none;
+      font: inherit;
+      padding: .5rem;
+      line-height: 1.5em;
+      color: var(--color-day-text);
+    }
+   
+    </style>
+</head>
+<body>
+    <form class="plan">
+        <label for="monday" class="notes day">
+          <span class="heading">Monday</span>
+          <textarea id="monday" spellcheck="false">e doloremque nam culpa saepe cum. Laudantium, repellendus laborum!</textarea>
+        </label>
+        <label for="tuesday" class="notes day">
+          <span class="heading">Tuesday</span>
+          <textarea id="tuesday" spellcheck="false">e doloremque nam culpa saepe cum. Laudantium, repellendus laborum!</textarea>
+        </label>
+        <label for="wednesday" class="notes day" style="background-color: #fde290;">
+          <span class="heading">Wednesday</span>
+          <textarea id="wednesday" spellcheck="false" style="background-color:#fde290;height: 400px;">e doloremque nam culpa saepe cum. Laudantium, repellendus laborum!</textarea>
+        </label>
+        <label for="thursday" class="notes day">
+          <span class="heading">Thursday</span>
+          <textarea id="thursday" spellcheck="false">e doloremque nam culpa saepe cum. Laudantium, repellendus laborum!</textarea>
+        </label>
+        <label for="friday" class="notes day">
+          <span class="heading">Friday</span>
+          <textarea id="friday" spellcheck="false">e doloremque nam culpa saepe cum. Laudantium, repellendus laborum!</textarea>
+        </label>
+        <label for="weekend" class="notes weekend">
+          <span class="heading">Weekend</span>
+          <textarea id="weekend" spellcheck="false">e doloremque nam culpa saepe cum. Laudantium, repellendus laborum!</textarea>
+        </label>
+        <label for="this-month" class="notes month">
+          <span class="heading">This month</span>
+          <textarea id="this-month" spellcheck="false">e doloremque nam culpa saepe cum. Laudantium, repellendus laborum!</textarea>
+        </label>
+        <label for="next-month" class="notes month">
+          <span class="heading">Next month</span>e doloremque nam culpa saepe cum. Laudantium, repellendus laborum!</textarea>
+        </label>
+      </form>
+</body>
+</html>
